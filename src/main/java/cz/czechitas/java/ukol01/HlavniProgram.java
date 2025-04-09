@@ -14,21 +14,59 @@ public class HlavniProgram {
 
         //TODO implementace domácího úkolu
 //    část2
+    zofka.penUp();
+    zofka.turnRight(180);
+    zofka.move(200);
+    zofka.turnLeft(90);
+    zofka.move(250);
+    zofka.turnLeft(90);
+    zofka.penDown();
     nakresliPrasatko();
-    zofka.move(100);
-    zofka.penDown();
-    nakreslitOsmiuhelnik();
+    zofka.move(350);
+
+//    zofka.penDown();
+//    nakreslitOsmiuhelnik();
+//    zofka.turnLeft(90);
+//    zofka.move(100);
+//    zofka.turnRight(90);
+//    zofka.penDown();
+//    nakreslitKrouzek();
+
     zofka.turnLeft(90);
-    zofka.move(100);
-    zofka.turnRight(90);
-    zofka.penDown();
-    nakreslitKrouzek();
-    zofka.turnLeft(90);
-    zofka.move(235);
+    zofka.move(600);
     zofka.turnRight(90);
     zofka.penDown();
     nakreslitSlunce();
-
+    zofka.turnLeft(180);
+    zofka.move(350);
+    zofka.turnLeft(90);
+    nakreslitDomek();
+    zofka.turnLeft(270);
+    zofka.move(100);
+    for (int i = 0; i < 2; i++) {
+            zofka.turnLeft(90);
+            zofka.move(53);
+            zofka.turnRight(90);
+            zofka.move(50);
+        }
+    zofka.turnRight(90);
+    for (int i = 0; i < 4; i++) {
+         nakreslitDomek();
+         zofka.turnLeft(180);
+         zofka.move(150);
+        }
+    nakreslitDomek();
+    zofka.turnLeft(90);
+    zofka.move(200);
+    zofka.turnRight(90);
+    zofka.move(100);
+    zofka.turnLeft(180);
+    nakreslitDomek();
+    zofka.turnLeft(90);
+    zofka.move(150);
+    zofka.turnRight(90);
+    zofka.move(1100);
+//část4
     }
 
     public void nakresliPrasatko() {
@@ -112,5 +150,20 @@ public class HlavniProgram {
         }
         zofka.penUp();
     }
+    public void nakreslitDomek () {
+        zofka.penDown();
+        zofka.move(100);
+        zofka.turnLeft(135);
+        zofka.move(75);
+        zofka.turnLeft(90);
+        zofka.move(75);
+        zofka.turnLeft(45);
+        for (int i = 0; i < 3; i++) {
+            zofka.move(106);
+            zofka.turnLeft(90);
+        }
+        zofka.penUp();
+    }
+
 }
 

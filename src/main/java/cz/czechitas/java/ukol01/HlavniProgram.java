@@ -13,7 +13,7 @@ public class HlavniProgram {
         zofka = new Turtle();
 
         //TODO implementace domácího úkolu
-//    část2
+
     zofka.penUp();
     zofka.turnRight(180);
     zofka.move(200);
